@@ -1,8 +1,6 @@
 *{
     /*border: 1px solid red;*/
     margin: 0;
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
 }
 
 :root{
@@ -10,13 +8,20 @@
     --charcoal:  rgb(48, 48, 48);
 }
 
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 header{
     color: var(--cool-blue-green);
     background-color: var(--charcoal);
     height: 80px;
     width: 100%;
-    position: absolute;
-
 }
 
 header h1{
@@ -27,27 +32,22 @@ header h1{
     text-align: right;
     margin-top: 10px;
     padding-right: 15px;
-    border: 2px;
 }
 
 nav{
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: -30px;
     
 }
 
 nav a{
     color: var(--cool-blue-green);
     text-decoration: none;
-}
-
-ul{
-    margin-right: 40px;
-    margin-top: -35px;
-}
-
-li{
-    list-style-type: none;
-    display: inline;
+    align-self: flex-start;
+    margin-right: 10px;
     padding: 0px 10px;
     font-weight: 600;
     font-size: 1.1em;
@@ -55,20 +55,23 @@ li{
 }
 
 .hero-section{
-    object-fit: 50% 50%;
     object-position: center top;
-    background-color: var(--cool-blue-green);
-    
-    
+    background-color: var(--cool-blue-green);   
+    display: flex;
 }
 
 img{
-    height: 300px;
+    height: 200px;
+    width: 100%;
+}
+
+.caption{
+    width: 50%;
+    
 }
 
 .caption h2{
     height: 40px;
-    align-items: right;
 }
 
 
