@@ -7,7 +7,7 @@
 
 :root{
     --cool-blue-green: rgba(115, 200, 229, 1);
-    --charcoal: rgba(0, 0, 0, 0.71);
+    --charcoal:  rgb(48, 48, 48);
 }
 
 header{
@@ -15,7 +15,7 @@ header{
     background-color: var(--charcoal);
     height: 80px;
     width: 100%;
-    position: fixed;
+    position: absolute;
 
 }
 
@@ -53,3 +53,22 @@ li{
     font-size: 1.1em;
     border-bottom: 2px solid var(--cool-blue-green);
 }
+
+.hero-section{
+    object-fit: 50% 50%;
+    object-position: center top;
+    background-color: var(--cool-blue-green);
+    
+    
+}
+
+img{
+    height: 300px;
+}
+
+.caption h2{
+    height: 40px;
+    align-items: right;
+}
+
+
