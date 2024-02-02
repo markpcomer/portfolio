@@ -10,66 +10,90 @@
 
 body{
     font-family: "Open Sans", sans-serif;
-    margin: 0;
-    display: flex;
     
 }
 
 header{
     color: var(--cool-blue-green);
     background-color: var(--charcoal);
-    height: 80px;
+    height: 100px;
     width: 100%;
 }
 
 header h1{
     color: var(--charcoal);
     font-size: 3.5em;
+    padding: 2px 10px 2px 50px;
     background-color: var(--cool-blue-green);
-    width: 37%;
     text-align: right;
-    margin-top: 10px;
-    padding-right: 15px;
+    border-radius: 2px;
 }
 
-nav{
+.top-container,
+.nav-container{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 30px;
-    margin-top: -30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
 }
 
-nav a{
+.top-container{
+    align-items: center;
+}
+
+.nav-container{  
+    margin-right: 50px; 
+}
+
+.nav-item{
+    border-bottom: 2px solid var(--cool-blue-green);
+    padding: 0 15px;
     color: var(--cool-blue-green);
     text-decoration: none;
-    align-self: flex-start;
-    margin-right: 10px;
-    padding: 0px 10px;
     font-weight: 600;
     font-size: 1.1em;
-    border-bottom: 2px solid var(--cool-blue-green);
 }
 
 .hero-section{
     object-position: center top;
-    background-color: var(--cool-blue-green);   
-    display: flex;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
 }
 
 img{
-    height: 200px;
+    height: 201px;
     width: 100%;
 }
 
 .caption{
-    width: 50%;
-    
+    background-color: var(--cool-blue-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20%;
+    height: 50px;
+    margin: -70px 70px 0 0;
+    float: right;
+    z-index: 2;
+    border: .15px solid var(--charcoal);
+    border-radius: 2px;
 }
+/* My hero image is lighter than the mockup's hero image,
+so I put a small border around the caption for 
+ease of vision. */
 
 .caption h2{
-    height: 40px;
+    font-size: 1.5em;
+}
+
+main{
+    display: flex;
+}
+
+.work-container{
+    margin-top: 203px;
 }
 
 
