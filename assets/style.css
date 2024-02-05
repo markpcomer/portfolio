@@ -127,15 +127,24 @@ main{
     flex: 4 1 60%;
     margin-left: 3%;
     margin-right: 3%;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;   
 }
 
 .project-item p{
     font-size: .85em;
-    margin: 0 5%
+    padding: 25px 0 50px 0;
 }
+
+.project-item,
+.small-project-item{
+    margin-bottom: 30px;
+}
+
+img{
+    border: 5px solid var(--cool-blue-green);
+    border-radius: 3px;
+}
+
 
 .project-item-left h3{ 
     padding: 2% 5% 2% 0;
@@ -145,7 +154,6 @@ main{
 
 .big-project{
    width: 98%;
-   
 }
 
 .project-caption{
@@ -154,7 +162,6 @@ main{
     height: 50px;
     float: left;
     margin-top: -100px;
-    z-index: 1;
 }
 
 .small-project-container{
@@ -179,5 +186,15 @@ main{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    
+    margin: 20px;
+}
+
+.contact-item{
+    border-bottom: 2px solid var(--charcoal);
+    color: var(--charcoal);
+    margin: 25px;
+    padding: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
 }
