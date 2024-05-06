@@ -44,13 +44,15 @@
                 <p>Qui galisum explicabo At voluptatum iste et repellat inventore aut 
                     odio maiores qui debitis sint. Qui odit quaerat non numquam culpa 
                     aut voluptatibus internos.</p>
+                    <br>
+                <p>Qui galisum explicabo At voluptatum iste et repellat inventore aut 
+                    odio maiores qui debitis sint. Qui odit quaerat non numquam culpa 
+                    aut voluptatibus internos.</p>
             </div>
         </section>
 
-        <section class="project-container">
-            <div class="heading" id="nav-link-2">
-                <h2>Work</h2>
-            </div>
+        <section class="project-container" id="nav-link-2">
+            <h2 class="heading">Work</h2>
             <div class="projects-list">
                 <div class="project-item" id="big-project">
                     <a href="https://github.com/markpcomer/Currency-Converter">
@@ -95,10 +97,8 @@
                 </div>
             </div>
         </section>
-        <section class="project-container">
-            <div class="heading" id="nav-link-3">
-                <h2>About me</h2>
-            </div>
+        <section class="bottom-container" id="nav-link-3">
+            <h2 class="heading">About me</h2>
             <nav class="contact-container bottom-item">
                 <a href="tel:+7327180616" class="contact-item">732.718.0616</a>
                 <a href="mailto: markpcomer@gmail.com" class="contact-item">markpcomer@gmail.com</a>
@@ -111,83 +111,18 @@
 </html>
 
 <!--
-        <section class="project-container">
-            <div class="project-container-left">
-                <div class="project-item-left item-1" >
-                    <h3>About Me</h3>
-                </div>
-
-                <div class="project-item-left item-3">
-                    <h3>Work</h3>
-                </div>
-
-                <div class="project-item-left item-9" id="nav-link-3">
-                    <h3>Contact Me</h3>
-                </div>
-            </div>
-
-            <div class="project-container-right">
-                <div class="project-item item-2">
-                    <img src="./assets/IMG_3704.jpeg" alt="">
-                    <p></p>
-                </div>
-            
-
-                <div class="project-item big-project item-4">
-                    <a href="https://github.com/markpcomer/Currency-Converter">
-                        <img src="./assets/bigimage.jpg" alt="Computer Screen with Code">
-                        <div class="project-caption">
-                            <h4>Currency Converter</h4>  
-                        </div>  
-                    </a>             
-                </div>
-
-                <div class="small-project-container project-item">
-                    <div class="small-project-item item-5">
-                        <a href="https://github.com/markpcomer/quiz-game">
-                            <img src="./assets/code1.jpg" alt="Computer Screen with Code">
-                            <div class="project-caption">
-                                <h4>Quiz Game</h4>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="small-project-item item-6">
-                        <a href="https://github.com/markpcomer/password-generator">
-                            <img src="./assets/code2.jpg" alt="Computer Screen with Code">
-                            <div class="project-caption">
-                                <h4>Password Generator</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="small-project-item item-7">
-                        <a href="https://github.com/markpcomer/The-Sabre-Inn">
-                            <img src="./assets/code3.jpg" alt="Computer Screen with Code">
-                            <div class="project-caption">
-                                <h4>The Sabre Inn</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="small-project-item item-8">
-                        <a href="https://github.com/markpcomer/intoxicology">
-                            <img src="./assets/code4.jpg" alt="Computer Screen with Code">
-                            <div class="project-caption">
-                                <h4>Intoxicology</h4>
-                            </div>
-                        </a>
-                    </div>
-                </div> 
-                <footer class="bottom-container">
-                    <nav class="contact-container bottom-item item-10">
-                        <a href="tel:+7327180616" class="contact-item">732.718.0616</a>
-                        <a href="mailto: markpcomer@gmail.com" class="contact-item">markpcomer@gmail.com</a>
-                        <a href="https://github.com/markpcomer" class="contact-item">Github</a>
-                        <a href="https://www.instagram.com/tanq_and_tonic/" class="contact-item">Instagram</a>
-                    </nav>
-                </footer> 
-            </div>
-        </section>
         
-        
+      function getCountries() {
+  let checkboxes = document.getElementsByName('country');
+  const selectedCountries = document.getElementById('selected-countries');
+  let result = " ";
+  for (let i = 0; i < checkboxes.length; i++) {
+    if (checkboxes[i].checked) {
+      result += checkboxes[i].value + " " + " Country, ";
+    }
+  }
+  document.getElementById('selected-countries').textContent =  "You have selected : " + result + " .";
+}
+
+ countrySelector.addEventListener('submit', getCountries);
      --> 
