@@ -153,6 +153,7 @@ ease of vision. */
     margin: .5%;
     border: 4px solid var(--cool-blue-green);
     border-radius: 3px;
+    opacity: 80%;
 }
 
 .project-caption{
@@ -160,6 +161,11 @@ ease of vision. */
     color: var(--charcoal);
     padding: 8px 10px;
     border-radius: 3px;
+    opacity: 100%;
+}
+
+.project-caption h4 p{
+    opacity: 100%;
 }
 
 .project-caption h4{
@@ -167,6 +173,11 @@ ease of vision. */
     text-decoration: none;
     padding-bottom: 10px;
 }
+
+.project-item:hover {
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
 
 a:link{
   text-decoration: none!important;
