@@ -1,6 +1,6 @@
 *{
-    /* border: 1px solid red; */
-    margin: 0;
+    border: 1px solid red;
+    box-sizing: border-box;
 }
 
 :root{
@@ -36,6 +36,7 @@ header h1{
 .top-container,
 .nav-container{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     
@@ -51,11 +52,12 @@ header h1{
 
 .nav-item{
     border-bottom: 2px solid var(--cool-blue-green);
-    padding: 0 15px;
+    padding: 5px 15px;
     color: var(--cool-blue-green);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1em;
+    font-size: 1.5em;
+    line-height: 2.5em;
     margin-right: 8px;
 }
 
@@ -93,31 +95,73 @@ ease of vision. */
     font-size: 1.5em;
 }
 
-main{
-    display: flex;
+.container{
+    max-width: 90%;
     margin: 0 auto;
-
 }
 
 .project-container{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
     margin-top: 220px;
+}
+
+.project-container > div{
+    flex: 0 0 75%;
 }
 
 .heading{
     flex: 0 0 20%;
+    padding-right: 20px;
     border-right: 3px solid var(--charcoal);
     text-align: right;
+    color: var(--charcoal);
+    font-size: 4vw;
+    line-height: 1;
 }
 
 .projects-list{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
 }
+
+.project-item{
+    font-size: 1em;
+    display: flex;
+    align-items: flex-end;
+    height: 150px;
+    flex-basis: 30%;
+    background-size: 100%;
+    transition: all 0.3s;
+
+}
+
+#big-project{
+    background-image: url(bigimage.jpg);
+    height: 400px;
+    flex-basis: 100%;
+}
+
+#quiz-game{
+    background-image: url(code1.jpg);
+}
+
+#password-generator{
+    background-image: url(code2.jpg);
+}
+
+#sabre-inn{
+    background-image: url(code3.jpg);
+}
+
+#intoxicology{
+    background-image: url(code4.jpg);
+}
+
 
 .project-item p{
     font-size: .85em;
@@ -133,6 +177,7 @@ img{
     background-color: var(--cool-blue-green);
     width: 100px;
     height: 50px;
+    padding: 10px;
     float: left;
     margin-top: -100px;
 }
