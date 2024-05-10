@@ -117,6 +117,7 @@ ease of vision. */
 
 .project-container{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
@@ -137,7 +138,7 @@ ease of vision. */
     line-height: 1;
 }
 
-.projects-list{
+.project-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -211,10 +212,6 @@ a:link{
     align-items: center;
 }
 
-.bottom-container > div{
-    
-}
-
 .contact-container{
     display: flex;
     flex-wrap: wrap;
@@ -237,7 +234,7 @@ a:link{
     background-repeat: no-repeat;
     background-size: 100% 12%;
     background-position: bottom;
-    transition: all 0.25s ease-in;
+    transition: all 0.25s ease;
 }
 
 .contact-item:hover{
@@ -257,15 +254,10 @@ a:link{
 
     .caption{
         width: 30%;
-        
     }
 
     .caption h2{
         font-size: 1.8em;
-    }
-
-    .contact-container{
-
     }
 
     .contact-item{
@@ -273,12 +265,87 @@ a:link{
         padding: 0;
         font-weight: 400;
         background-size: 100% 0;
-
     }
-
 }
 
 
-@media  screen and (min-width: 768px) {
+@media  screen and (max-width: 768px) {
+    .top-container{
+        justify-content: center;
+        padding: 15px 0 115px 9px;
+    }
+
+    .top-container h1{
+        width: 100%;
+        text-align: center;
+        font-size: 3.5em !important;
+        line-height: 100%;
+    }
+
+    .nav-container{
+        margin: 0 0 0 9px;;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .project-container > h2,
+    .project-container > div{
+        flex-basis: 100%;
+    }
+
+    .heading {
+        border-right: none;
+        border-bottom: 4px solid var(--charcoal);
+        text-align: start;
+        font-size: 3em;
+        padding: 10px 0;
+    }
+
+    .about-text{
+        padding-top: 15px;
+    }
+
+    .project-list{
+        margin-top: 15px;
+    }
+
+    .project-item{
+        flex-basis: 100%;
+    }
+
+    #big-project{
+        height: 150px;
+    }
+
+    img{
+        height: 125px;
+    }
+
+    .caption{
+        float: none;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bottom-container{
+        display: block;
+    }
+
+    .bottom-container > nav{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    .bottom-container > h2{
+        width: 100%;
+    }
 
 }
