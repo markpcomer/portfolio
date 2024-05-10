@@ -66,14 +66,14 @@ nav{
     margin-right: 9px;
     background-image: linear-gradient(var(--cool-blue-green), var(--cool-blue-green));
     background-repeat: no-repeat;
-    background-size: 100% 12%;
     background-position: bottom;
-    transition: all 0.25s ease;
+    background-size: 100% 12%;
+    transition: 0.25s;
 }
 
 .nav-item:hover{
-    background-size: 100% 100%;
     color: var(--charcoal);
+    background-size: 100% 100%;
 }
 
 .hero-section{
@@ -98,7 +98,6 @@ img{
     height: 50px;
     margin: -70px 70px 0 0;
     float: right;
-    z-index: 2;
     border: .15px solid var(--charcoal);
     border-radius: 2px;
 }
@@ -119,29 +118,37 @@ ease of vision. */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    /*
     align-items: stretch;
+    */
     justify-content: space-between;
     margin: 30px 0;
 }
 
 .project-container > div{
-    flex: 0 0 75%;
+    flex-basis: 75%;
 }
 
 .heading{
-    flex: 0 0 20%;
+    flex-basis: 20%;
     padding-right: 20px;
     border-right: 3px solid var(--charcoal);
     text-align: right;
     color: var(--charcoal);
-    font-size: 4vw;
-    line-height: 1;
+    font-size: 5em;   
+}
+
+.about-text > p {
+    line-height: 2;
 }
 
 .project-list{
     display: flex;
     flex-wrap: wrap;
+    /*
     justify-content: space-between;
+    */
+
 }
 
 .project-item{
@@ -149,15 +156,14 @@ ease of vision. */
     align-items: flex-end;
     height: 150px;
     flex-basis: 49%;
-    background-size: 100%;
     transition: all 0.3s;
+    background-size: 100%;
     padding: 0 0 20px 0;
     margin: .5%;
     border: 4px solid var(--cool-blue-green);
     border-radius: 3px;
     opacity: 0.8;
-    transition: opacity .8s ease; 
-    mix-blend-mode: soft-light;
+    transition: .8s; 
 }
 
 
@@ -176,7 +182,7 @@ ease of vision. */
 
 .project-item:hover {
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: 0.5s;
   }
 
 a:link{
@@ -201,7 +207,7 @@ a:link{
     background-image: url(code3.jpg);
 }
 
-#intoxicology{
+#calculator{
     background-image: url(code4.jpg);
 }
 
@@ -209,32 +215,32 @@ a:link{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 .contact-container{
+    /*
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    */
     justify-content: space-around;
     align-items: center;
-    flex: 0 0 75%;
+    flex-basis: 75%;
 }
 
 .contact-item{
-    border-bottom: 4px solid var(--charcoal);
     color: var(--charcoal);
     margin: 25px;
     padding: 0 15px;
     font-weight: 600;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 2;
     background-image: linear-gradient(var(--charcoal), 
     var(--charcoal));
     background-repeat: no-repeat;
     background-size: 100% 12%;
     background-position: bottom;
-    transition: all 0.25s ease;
+    transition: 0.25s;
 }
 
 .contact-item:hover{
@@ -265,6 +271,8 @@ a:link{
         padding: 0;
         font-weight: 400;
         background-size: 100% 0;
+        border-bottom: 4px solid var(--charcoal);
+
     }
 }
 
@@ -295,7 +303,8 @@ a:link{
     }
 
     .project-container > h2,
-    .project-container > div{
+    .project-container > div,
+    .project-item{
         flex-basis: 100%;
     }
 
@@ -313,10 +322,6 @@ a:link{
 
     .project-list{
         margin-top: 15px;
-    }
-
-    .project-item{
-        flex-basis: 100%;
     }
 
     #big-project{
@@ -342,6 +347,10 @@ a:link{
         flex-direction: column;
         align-items: flex-start;
         margin-top: 15px;
+    }
+
+    .contact-item {
+        border-bottom: 4px solid var(--charcoal);
     }
 
     .bottom-container > h2{
