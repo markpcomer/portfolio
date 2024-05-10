@@ -6,12 +6,13 @@
 :root{
     --cool-blue-green: rgba(115, 200, 229, 1);
     --charcoal:  rgb(75, 88, 108);
+    --black: rgb(0, 0, 0);
 }
 
 body{
     font-family: "Open Sans", sans-serif;
     margin: 0;
-    
+    padding-bottom: 100px;
 }
 
 header{
@@ -58,16 +59,16 @@ nav{
 }
 
 .nav-item{
-    padding: 5px 15px;
+    padding: 10px 15px;
     color: var(--cool-blue-green);
     text-decoration: none;
     font-size: 1.5em;
     margin-right: 9px;
-    background-image: linear-gradient(0deg, var(--cool-blue-green) 50%, var(--cool-blue-green) 100%);
+    background-image: linear-gradient(var(--cool-blue-green), var(--cool-blue-green));
     background-repeat: no-repeat;
     background-size: 100% 12%;
     background-position: bottom;
-    transition: all 0.25s ease-in;
+    transition: all 0.25s ease;
 }
 
 .nav-item:hover{
@@ -153,19 +154,17 @@ ease of vision. */
     margin: .5%;
     border: 4px solid var(--cool-blue-green);
     border-radius: 3px;
-    opacity: 80%;
+    opacity: 0.8;
+    transition: opacity .8s ease; 
+    mix-blend-mode: soft-light;
 }
+
 
 .project-caption{
     background-color: var(--cool-blue-green);
-    color: var(--charcoal);
+    color: var(--black);
     padding: 8px 10px;
     border-radius: 3px;
-    opacity: 100%;
-}
-
-.project-caption h4 p{
-    opacity: 100%;
 }
 
 .project-caption h4{
@@ -231,6 +230,55 @@ a:link{
     margin: 25px;
     padding: 0 15px;
     font-weight: 600;
-    font-size: 1.1em;
-    
+    font-size: 1.3em;
+    line-height: 2;
+    background-image: linear-gradient(var(--charcoal), 
+    var(--charcoal));
+    background-repeat: no-repeat;
+    background-size: 100% 12%;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+}
+
+.contact-item:hover{
+    background-size: 100% 100%;
+    color: var(--cool-blue-green);
+}
+
+@media  screen and (max-width: 992px) {
+    .top-container h1{
+        font-size: 2.5em;
+        padding: 5px;
+    }
+
+    .nav-item{
+        font-size: 1.25em;
+    }
+
+    .caption{
+        width: 30%;
+        
+    }
+
+    .caption h2{
+        font-size: 1.8em;
+    }
+
+    .contact-container{
+
+    }
+
+    .contact-item{
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        background-size: 100% 0;
+
+    }
+
+}
+
+
+@media  screen and (min-width: 768px) {
+
 }
