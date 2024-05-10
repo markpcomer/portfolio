@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-
 }
 
 :root{
@@ -24,7 +23,7 @@ header{
 
 header h1{
     color: var(--charcoal);
-    font-size: 3.5em;
+    font-size: 4.5em;
     padding: 2px 10px 2px 50px;
     background-color: var(--cool-blue-green);
     text-align: right;
@@ -41,15 +40,24 @@ header h1{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
 
 .top-container{
     align-items: center;
 }
 
+.top-item > img{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border-radius: 50%;
+    align-items: center;
+    border: solid 3px var(--charcoal);
+}
+
 .nav-container{  
     margin-right: 50px; 
+    justify-content: end;
 }
 
 nav{
@@ -80,6 +88,8 @@ nav{
     object-position: center top;
     width: 100%;
 }
+
+
 
 img{
     height: 201px;
@@ -118,9 +128,6 @@ ease of vision. */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /*
-    align-items: stretch;
-    */
     justify-content: space-between;
     margin: 30px 0;
 }
@@ -145,10 +152,6 @@ ease of vision. */
 .project-list{
     display: flex;
     flex-wrap: wrap;
-    /*
-    justify-content: space-between;
-    */
-
 }
 
 .project-item{
@@ -166,7 +169,6 @@ ease of vision. */
     transition: .8s; 
 }
 
-
 .project-caption{
     background-color: var(--cool-blue-green);
     color: var(--black);
@@ -183,7 +185,7 @@ ease of vision. */
 .project-item:hover {
     opacity: 1;
     transition: 0.5s;
-  }
+}
 
 a:link{
   text-decoration: none!important;
@@ -218,11 +220,6 @@ a:link{
 }
 
 .contact-container{
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    */
     justify-content: space-around;
     align-items: center;
     flex-basis: 75%;
@@ -266,13 +263,16 @@ a:link{
         font-size: 1.8em;
     }
 
+    .heading{
+        font-size: 3em;
+    }
+
     .contact-item{
         margin: 0;
         padding: 0;
         font-weight: 400;
         background-size: 100% 0;
         border-bottom: 4px solid var(--charcoal);
-
     }
 }
 
@@ -356,5 +356,4 @@ a:link{
     .bottom-container > h2{
         width: 100%;
     }
-
 }
